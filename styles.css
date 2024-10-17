@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section, .right-section {
+  padding: 20px;
+}
+
+.left-section {
+  width: 70%;
+}
+
+.right-section {
+  width: 30%;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid rgb(205, 204, 204);
+}
+
+.profile h1 {
+  font-size: 24px;
+  color: #f58220;
+  margin-top: 10px;
+}
+
+.profile p {
+  font-size: 18px;
+}
+
+.education, .experience, .contact, .skills {
+  margin-top: 30px;
+}
+
+.education h2, .experience h2, .contact h2, .skills h2 {
+  color: black;
+  border-bottom: 2px solid #f58220;
+  padding-bottom: 5px;
+  background-color: #f58220;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.education-item, .experience-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.right-content {
+  width: 50%;
+  text-align: left;
+}
+
+.education-item p, .experience-item p {
+  margin-bottom: 5px;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid white;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 0 10px; /* Reduce padding */
+  }
+
+  .left-section, .right-section {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .education-item, .experience-item {
+    flex-direction: column; /* Stack items vertically */
+    text-align: left; /* Align text left */
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+  }
+
+  .profile img {
+    width: 120px; /* Smaller image size on mobile */
+    height: 120px;
+  }
+
+  .profile h1 {
+    font-size: 20px;
+  }
+
+  .profile p {
+    font-size: 16px;
+  }
+
+  .skills ul li {
+    font-size: 16px;
+  }
+}
