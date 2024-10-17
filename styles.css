@@ -49,6 +49,10 @@ body {
   margin-top: 10px;
 }
 
+h5 {
+  color: rgb(196, 193, 193);
+  text-align: center;
+}
 .profile p {
   font-size: 18px;
 }
